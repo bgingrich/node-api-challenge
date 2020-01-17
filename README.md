@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    Express.json allows the browser to parse data and return it as JSON.
+    The core feature of Express is Middleware.
+
 - [ ] Describe Middleware?
+
+    Middleware are functions that get the request and response (the homies; (req, res) objects, use them and then when called, trigger an action. Most of our code, including route-handlers, is middleware working behind the scenes. 
 
 - [ ] Describe a Resource?
 
+    Resource is an object with a type, data, connections to other resources and a set of methods that operate on it.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    API will return successful HTTP Messages such as 200, 201, or 202.
+
 - [ ] How can we partition our application into sub-applications?
+
+    Using Express Middleware. This results in a clean application structure that uses several sub-apps, i.e. api, web and errors mounted into the primary host app. Sub-app provides flexibility.
+
 
 ## Minimum Viable Product
 
